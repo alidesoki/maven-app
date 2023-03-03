@@ -2,6 +2,7 @@ pipeline {
     agent any
     environment {
         Version = '1.1.0'
+        Credentials = credentials('server-creds')
     }
     stages {
             stage("build") {
@@ -18,6 +19,7 @@ pipeline {
             stage ("deploy"){
                 steps {
                     echo "deploying the application"
+                    echo "deploying to ${Credentials}"
                 }
             }
     }
