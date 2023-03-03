@@ -3,7 +3,7 @@ pipeline {
     environment {
         Version = '1.1.0'
     }
-    parameteres {
+    parameters {
         
         choice(name: 'version', choices: ['1.1.0', '1.1.1', '1.1.2'], description: '')
         booleanParam(name: 'excuteTests', defaultValue: true, description: '')
