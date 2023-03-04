@@ -11,5 +11,6 @@ def buildImage() {
         sh "docker push alidesoki/maven-app:1.1.2"
     }
     }
+    
 
 return this
