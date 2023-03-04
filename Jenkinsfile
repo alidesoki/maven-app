@@ -17,6 +17,7 @@ pipeline {
                     script {
                         gv = load "script.groovy"
                     }
+                    sh "aws s3 ls"
                 }
             }
             
