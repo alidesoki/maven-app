@@ -17,8 +17,9 @@ pipeline {
                     script {
                         gv = load "script.groovy"
                     }
-                    sh "aws s3 ls"
                     sh "ansible --version"
+                    sh "aws s3 ls"
+                    
                 }
             }
             
